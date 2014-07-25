@@ -76,7 +76,8 @@ func (hh *HipchatHandler) Register(r *mux.Router) {
 // Usage returns a string to show to the user about configuration of this hook
 func (hh *HipchatHandler) Usage() string {
 	return `
-	Sends alerts to the Hipchat room identified in the URL as {room}.
+	Sends alerts to the Hipchat room identified in the URL as {room}. {room} can
+	be the name or API identifier for the room.
 
 	Requires the following environment variables:
 	CIRCONUS_WEBHOOK_PROXY_HIPCHAT_API_TOKEN: API (version 1) token
