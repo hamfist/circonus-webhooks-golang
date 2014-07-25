@@ -37,8 +37,8 @@ func (cav *CirconusAlertValue) String() string {
 }
 
 // UnmarshalJSON interprets the value as a string regardless of whether it is a numeric value or not
-func (cv *CirconusAlertValue) UnmarshalJSON(body []byte) (err error) {
-	cv.value = strings.Trim(string(body), "\"")
+func (cav *CirconusAlertValue) UnmarshalJSON(body []byte) (err error) {
+	cav.value = strings.Trim(string(body), "\"")
 	return nil
 }
 
