@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/modcloth/circonus-webhooks-golang"
+	"github.com/modcloth-labs/circonus-webhooks-golang"
 
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
