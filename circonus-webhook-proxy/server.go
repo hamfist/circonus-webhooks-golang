@@ -57,8 +57,13 @@ CIRCONUS_WEBHOOK_PROXY_ACCOUNT_TIMEZONE: Timezone your Circonus organization
 		handler.Register(r)
 	}
 
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+
 	n := negroni.Classic()
 	n.Use(negronilogrus.NewMiddleware())
 	n.UseHandler(r)
-	n.Run(fmt.Sprintf(":%s", os.Getenv("PORT")))
+	n.Run(fmt.Sprintf(":%s", port))
 }
