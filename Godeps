@@ -1,0 +1,35 @@
+{
+	"ImportPath": "github.com/modcloth-labs/circonus-webhooks-golang",
+	"GoVersion": "go1.3",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.4.1",
+			"Rev": "e1154b431565f2f11106046e8e86ef35256b4d28"
+		},
+		{
+			"ImportPath": "github.com/andybons/hipchat",
+			"Rev": "08bf65eade11bf8d584e933d01a35c2799c36ff4"
+		},
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-22-g31b493c",
+			"Rev": "31b493cdec9bb18bc5a4cf20cc0b3d9b0f6d284f"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "14f550f51af52180c2eefed15e5fd18d63c0a64a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "14cafe28513321476c73967a5a4f3454b6129c46"
+		},
+		{
+			"ImportPath": "github.com/meatballhat/negroni-logrus",
+			"Rev": "d5e114d7a445f7a3652cf807d3f83d5dceb8de26"
+		}
+	]
+}
